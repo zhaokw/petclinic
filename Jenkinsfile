@@ -3,6 +3,7 @@ node {
     git 'https://github.com/zhaokw/petclinic'
   }
   stage('compile') {
-    sh 'mvn package'
+    def mvnHome = tool name: 'maven-3', type: 'maven'
+    sh "${mvnHome}/bib/mvn package"
   }
 }
