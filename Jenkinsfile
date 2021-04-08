@@ -1,5 +1,5 @@
 node {
   stage('compile') {
-    sh "mvn package"
+    echo 'haha'
   }
 }
